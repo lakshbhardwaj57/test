@@ -4,112 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>HARPERs INC.</title>
     <style>
-        *{
-            padding: 0%;
-            margin: 0%;
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
             font-family: "Orbitron", sans-serif;
         }
-        .container{
-            height: 100vh;
-            width: 100%;
-        
-            display: flex;
-            background: linear-gradient(to right, rgb(28, 0, 28),rgb(31, 31, 62));
-            border-bottom:1px solid white ;
 
+        /* ── HERO SECTION ── */
+        .container {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            background: linear-gradient(to right, rgb(28, 0, 28), rgb(31, 31, 62));
+            border-bottom: 1px solid white;
+            position: relative;
+            overflow: hidden;
         }
-        .left{
+
+        .left {
             height: 100vh;
             width: 50%;
-            
+            z-index: 1;
         }
-        .right{
+
+        .right {
             height: 100vh;
             width: 50%;
-            
+            position: relative;
         }
-        .circle{
-            height: 200px;
-            width: 200px;
-            border-radius: 50%;
-            
-            position: absolute;
-            top: 35%;
-            background: linear-gradient(to right, rgb(10 , 10 , 159),rgb(173,16,173));
-            transform: scale(1);
+
+        .circle {
+            height: 200px; width: 200px; border-radius: 50%;
+            position: absolute; top: 35%;
+            background: linear-gradient(to right, rgb(10,10,159), rgb(173,16,173));
             animation: scaling 2s ease-in infinite alternate-reverse;
         }
-        .circle1{
-            height: 100px;
-            width: 100px;
-            border-radius: 50%;
-        
-            position: absolute;
-            top: 62%;
-            background: linear-gradient(to right,rgb(10,10,159),rgb(173,16,173));
-            transform: scale(1);
+        .circle1 {
+            height: 100px; width: 100px; border-radius: 50%;
+            position: absolute; top: 62%;
+            background: linear-gradient(to right, rgb(10,10,159), rgb(173,16,173));
             animation: scaling1 2s ease-in infinite 2s alternate-reverse;
         }
-        .circle2{
-            height: 200px;
-            width: 200px;
-            border-radius: 50%;
-        
-            position: absolute;
-            top: 60%;
-            left: 57%;
-            background: linear-gradient(to right,rgb(10,10,159),rgb(173,16,173));
-            transform: scale(1);
+        .circle2 {
+            height: 200px; width: 200px; border-radius: 50%;
+            position: absolute; top: 60%; left: 57%;
+            background: linear-gradient(to right, rgb(10,10,159), rgb(173,16,173));
             animation: scaling2 2s ease-in infinite alternate-reverse;
-            }
-            .circle3{
-                height: 100px;
-                width: 100px;
-                border-radius: 50%;
-                
-                position: absolute;
-                top: 47%;
-                left: 60%;
-                background: linear-gradient(to right,rgb(10,10,159),rgb(173,16,173));
-                transform: scale(1);
-                animation: scaling3 1s ease-in infinite 1s alternate-reverse ;
-            }
-            .circle4{
-                height: 200px;
-                width: 200px;
-                border-radius: 50%;
-            
-                position: absolute;
-                top: 30%;
-                left: 66%;
-                background: linear-gradient(to right,rgb(10,10,159),rgb(173,16,173));
-                transform: scale(1);
-                animation: scaling4 2s ease-in infinite 2s alternate-reverse;
-            }
-            .circle5{
-                height: 100px;
-                width: 100px;
-                border-radius: 50%;
-                
-                position: absolute;
-                top: 60%;
-                left: 70%;
-                background: linear-gradient(to right,rgb(10,10,159),rgb(173,16,173));
-                transform:  scale(1);
-                animation: scaling5 1s ease-in infinite 1s alternate-reverse;
-            }
-        .logo{
+        }
+        .circle3 {
+            height: 100px; width: 100px; border-radius: 50%;
+            position: absolute; top: 47%; left: 60%;
+            background: linear-gradient(to right, rgb(10,10,159), rgb(173,16,173));
+            animation: scaling3 1s ease-in infinite 1s alternate-reverse;
+        }
+        .circle4 {
+            height: 200px; width: 200px; border-radius: 50%;
+            position: absolute; top: 30%; left: 66%;
+            background: linear-gradient(to right, rgb(10,10,159), rgb(173,16,173));
+            animation: scaling4 2s ease-in infinite 2s alternate-reverse;
+        }
+        .circle5 {
+            height: 100px; width: 100px; border-radius: 50%;
+            position: absolute; top: 60%; left: 70%;
+            background: linear-gradient(to right, rgb(10,10,159), rgb(173,16,173));
+            animation: scaling5 1s ease-in infinite 1s alternate-reverse;
+        }
+
+        .logo {
             color: white;
             margin-top: 10%;
             margin-left: 22%;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: bold;
         }
-        .p{
+
+        .p {
             color: white;
             font-size: 70px;
             margin-top: 12%;
@@ -117,234 +91,384 @@
             font-weight: bolder;
             word-spacing: 20px;
         }
-        @keyframes scaling{
-            from{
-                transform: scale(0.8);
-            }
-            to{
-                transform: scale(0.7);
-            }
-        }
-        @keyframes scaling1{
-            from{
-                transform: scale(1.3);
-            }
-            to{
-                transform: scale(0.5);
-            }
-        }
-        @keyframes scaling2{
-            from{
-                transform: scale(1);
-            }
-            to{
-                transform: scale(0.9);
-            }
-        }
-        @keyframes scaling3{
-            from{
-                transform: scale(1.3);
-            }
-            to{
-                transform: scale(1);
-            }
-        }
-        @keyframes scaling4{
-            from{
-                transform: scale(1);
-            }
-            to{
-                transform: scale(0.9);
-            }
-        }
-        @keyframes scaling5{
-            from{
-                transform: scale(1.3);
-            }
-            to{
-                transform: (1);
-            }
-        }
-        .container1{
-            height: 100vh;
+
+        @keyframes scaling   { from { transform: scale(0.8); } to { transform: scale(0.7); } }
+        @keyframes scaling1  { from { transform: scale(1.3); } to { transform: scale(0.5); } }
+        @keyframes scaling2  { from { transform: scale(1);   } to { transform: scale(0.9); } }
+        @keyframes scaling3  { from { transform: scale(1.3); } to { transform: scale(1);   } }
+        @keyframes scaling4  { from { transform: scale(1);   } to { transform: scale(0.9); } }
+        @keyframes scaling5  { from { transform: scale(1.3); } to { transform: scale(1);   } }
+
+        /* ── ABOUT SECTION ── */
+        .container1 {
+            min-height: 100vh;
             width: 100%;
-            background: linear-gradient(to right, rgb(28, 0, 28),rgb(31, 31, 62));
-            border: 1px solid transparent;
+            background: linear-gradient(to right, rgb(28, 0, 28), rgb(31, 31, 62));
             border-bottom: 1px solid white;
+            position: relative;
         }
-        .p1{
-            color: rgb(189,27,170);
+
+        .p1 {
+            color: rgb(189, 27, 170);
             font-size: 20px;
             margin-top: 8%;
             margin-left: 10%;
             font-weight: bold;
         }
-        .p2{
+
+        .p2 {
             color: white;
             font-size: 25px;
             margin-top: 5%;
             margin-left: 60%;
+        }
 
-        }
-        .container2{
-            height: 100vh;
+        /* ── SERVICES SECTION ── */
+        .container2 {
+            min-height: 100vh;
             width: 100%;
-            border: 1px solid transparent;
-              background: linear-gradient(to right, rgb(28, 0, 28),rgb(31, 31, 62));
-              border-bottom: 1px solid white;
+            background: linear-gradient(to right, rgb(28, 0, 28), rgb(31, 31, 62));
+            border-bottom: 1px solid white;
         }
-        .p3{
-         color: white;
-         margin-top: 70px;
-         margin-left: 13%;
-         font-size: 40px;
+
+        .p3 {
+            color: white;
+            margin-top: 70px;
+            margin-left: 13%;
+            font-size: 40px;
         }
-        .p4{
+
+        .p4 {
             color: white;
             margin-top: 20px;
             margin-left: 13%;
         }
-        .child{
+
+        .child {
             display: flex;
             margin-top: 8%;
-            text-align: centre;
             justify-content: center;
             gap: 7%;
-            
+            flex-wrap: wrap;
+            padding: 0 5%;
         }
-        .box1{
-            height: 40vh ;
+
+        .box1, .box2, .box3 {
+            height: 40vh;
             width: 20%;
+            min-width: 200px;
             border: 1px solid white;
             background-color: aliceblue;
-         }
-         .p5,.p6,.p7{
+        }
+
+        .p5, .p6, .p7 {
             font-size: 20px;
             margin-top: 22%;
             margin-left: 33%;
             color: rgb(214, 36, 221);
             font-weight: bold;
-         }
-         .btn{
+        }
+
+        .btn, .btn1, .btn2 {
             margin-top: 27%;
-           text-align: center;
-         }
-         .btn button{
+            text-align: center;
+        }
+
+        .btn button, .btn1 button, .btn2 button {
             height: 40px;
             width: 40%;
             background-color: black;
             color: aliceblue;
-         }
-         .btn button:hover{
+            cursor: pointer;
+            border: none;
+            font-family: "Orbitron", sans-serif;
+        }
+
+        .btn button:hover, .btn1 button:hover, .btn2 button:hover {
             background-color: rgb(189, 24, 204);
             color: black;
-         }
-        .box2{
-             height: 40vh ;
-            width: 20%;
-            border: 1px solid white;
-            background-color: aliceblue;
         }
-        .btn1{
-             margin-top: 27%;
-           text-align: center;
-        }
-        .btn1 button{
-             height: 40px;
-            width: 40%;
-            background-color: black;
-            color: aliceblue;
-        }
-        .btn1 button:hover{
-             background-color: rgb(189, 24, 204);
-            color: black;
-        }
-        .box3{
-            height: 40vh ;
-            width: 20%;
-            border: 1px solid white;  
-            background-color: aliceblue;
-        }
-        .btn2{
-           margin-top: 27%;
-           text-align: center;
-        }
-        .btn2 button{
-             height: 40px;
-            width: 40%;
-            background-color: black;
-            color: aliceblue;
-        }
-        .btn2 button:hover{
-              background-color: rgb(189, 24, 204);
-            color: black;
-        }
-        .container3{
-            height: 100vh;
+
+        /* ── FEATURE SECTION ── */
+        .container3 {
+            min-height: 100vh;
             width: 100%;
-        display: flex;
-        align-items: center;
-              background: linear-gradient(to right, rgb(28, 0, 28),rgb(31, 31, 62));
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, rgb(28, 0, 28), rgb(31, 31, 62));
         }
-        .left-side{
+
+        .left-side {
             align-content: center;
-            height: 50% ;
+            height: 50%;
             width: 50%;
             border: 2px solid white;
-          
+            padding: 40px;
         }
-        .right-side{
-             height: 50% ;
+
+        .right-side {
+            height: 50%;
             width: 50%;
             border: 2px solid white;
         }
-        .container3 h1{
+
+        .container3 h1 {
             color: aliceblue;
             font-size: 35px;
-          
-           
         }
-        .container3 p{
+
+        .container3 p {
             color: white;
-            
+            margin-top: 16px;
+            line-height: 1.6;
         }
-        .p9{
-            color: white;
-            margin-left: 20%;
-            margin-top: 20px;
-        }
-        .btn3{
-            margin-top: 27%;
-           text-align: center;
-        }
-        .btn3 button{
-                height: 40px;
-            width: 40%;
+
+        .container3 button {
+            margin-top: 30px;
+            height: 40px;
+            padding: 0 20px;
             background-color: black;
             color: aliceblue;
+            border: 1px solid white;
+            cursor: pointer;
+            font-family: "Orbitron", sans-serif;
         }
-        .btn3 button:hover{
-           background-color: rgb(189, 24, 204);
+
+        .container3 button:hover {
+            background-color: rgb(189, 24, 204);
             color: black;
         }
-        .container4{
-            height: 60vh;
+
+        /* ── FOOTER SECTION ── */
+        .container4 {
+            min-height: 60vh;
             width: 100%;
-        
-            background: linear-gradient(to right,rgb(28,0,28),rgb(31,31,62));
+            background: linear-gradient(to right, rgb(28, 0, 28), rgb(31, 31, 62));
+            padding: 60px 20%;
         }
-        .p10{
+
+        .p10 {
             color: aliceblue;
             font-size: 35px;
-            margin-left: 20%;
+        }
+
+        /* ═══════════════════════════════════════
+           MEDIA QUERIES
+        ═══════════════════════════════════════ */
+
+        /* ── TABLET (max-width: 1024px) ── */
+        @media (max-width: 1024px) {
+            .p {
+                font-size: 50px;
+                margin-left: 10%;
+            }
+
+            .logo {
+                margin-left: 10%;
+            }
+
+            .p2 {
+                font-size: 20px;
+                margin-left: 40%;
+            }
+
+            .p3 {
+                font-size: 30px;
+            }
+
+            .box1, .box2, .box3 {
+                width: 25%;
+            }
+
+            .container3 h1 {
+                font-size: 26px;
+            }
+
+            .p10 {
+                font-size: 26px;
+            }
+        }
+
+        /* ── MOBILE LANDSCAPE / SMALL TABLET (max-width: 768px) ── */
+        @media (max-width: 768px) {
+
+            /* Hero */
+            .container {
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            .left {
+                width: 100%;
+                height: auto;
+                padding: 40px 20px 20px;
+            }
+
+            .right {
+                width: 100%;
+                height: 250px;
+                position: relative;
+            }
+
+            .logo {
+                margin: 0 0 16px 0;
+                font-size: 18px;
+            }
+
+            .p {
+                font-size: 36px;
+                margin: 0;
+                word-spacing: 8px;
+                line-height: 1.3;
+            }
+
+            /* Reposition circles for mobile right panel */
+            .circle  { top: 5%;  left: 5%;  height: 90px;  width: 90px;  }
+            .circle1 { top: 50%; left: 10%; height: 50px;  width: 50px;  }
+            .circle2 { top: 40%; left: 45%; height: 90px;  width: 90px;  }
+            .circle3 { top: 20%; left: 55%; height: 50px;  width: 50px;  }
+            .circle4 { top: 5%;  left: 65%; height: 90px;  width: 90px;  }
+            .circle5 { top: 55%; left: 72%; height: 50px;  width: 50px;  }
+
+            /* About */
+            .container1 {
+                min-height: auto;
+                padding: 60px 20px;
+            }
+
+            .p1 {
+                margin: 0 0 30px 0;
+                font-size: 16px;
+            }
+
+            .p2 {
+                margin: 0;
+                font-size: 16px;
+                line-height: 1.8;
+            }
+
+            /* Services */
+            .container2 {
+                min-height: auto;
+                padding-bottom: 60px;
+            }
+
+            .p3 {
+                font-size: 24px;
+                margin-left: 5%;
+                margin-top: 50px;
+            }
+
+            .p4 {
+                font-size: 13px;
+                margin-left: 5%;
+                margin-right: 5%;
+                line-height: 1.7;
+            }
+
+            .child {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                margin-top: 40px;
+            }
+
+            .box1, .box2, .box3 {
+                width: 80%;
+                min-width: unset;
+                height: auto;
+                min-height: 200px;
+                padding-bottom: 30px;
+            }
+
+            .p5, .p6, .p7 {
+                margin-top: 15%;
+                margin-left: 10%;
+                font-size: 18px;
+            }
+
+            .btn, .btn1, .btn2 {
+                margin-top: 15%;
+            }
+
+            /* Feature */
+            .container3 {
+                flex-direction: column;
+                min-height: auto;
+                padding: 60px 20px;
+                align-items: stretch;
+            }
+
+            .left-side, .right-side {
+                width: 100%;
+                height: auto;
+                min-height: 200px;
+                padding: 30px 20px;
+            }
+
+            .right-side {
+                display: none; /* empty div — hide on mobile */
+            }
+
+            .container3 h1 {
+                font-size: 22px;
+                line-height: 1.4;
+            }
+
+            /* Footer */
+            .container4 {
+                padding: 40px 5%;
+            }
+
+            .p10 {
+                font-size: 22px;
+            }
+        }
+
+        /* ── SMALL MOBILE (max-width: 480px) ── */
+        @media (max-width: 480px) {
+            .p {
+                font-size: 28px;
+            }
+
+            .p3 {
+                font-size: 20px;
+            }
+
+            .p5, .p6, .p7 {
+                font-size: 15px;
+                margin-left: 8%;
+            }
+
+            .container3 h1 {
+                font-size: 18px;
+            }
+
+            .container3 p {
+                font-size: 13px;
+            }
+
+            .p2 {
+                font-size: 14px;
+            }
+
+            .p4 {
+                font-size: 12px;
+            }
+
+            .p10 {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
 <body>
+
+    <!-- HERO -->
     <div class="container">
         <div class="left">
             <div class="logo">HARPERs INC.</div>
-            <div class="p">ALWAYS<br>READY<br>TO MAKE<br>YOUR LIFE<br>BETTER </div>
+            <div class="p">ALWAYS<br>READY<br>TO MAKE<br>YOUR LIFE<br>BETTER</div>
         </div>
         <div class="right">
             <div class="circle"></div>
@@ -353,41 +477,58 @@
             <div class="circle3"></div>
             <div class="circle4"></div>
             <div class="circle5"></div>
-            <div class="circle6"></div>
         </div>
     </div>
+
+    <!-- ABOUT -->
     <div class="container1">
         <div class="p1"><p>YOU CAN COUNT ON US</p></div>
-        <div class="p2"><p>This text block gives a brief<br>overview of your company.<br>Share your philosophy.<br>vision, or mantra here.</p></div>
+        <div class="p2">
+            <p>This text block gives a brief<br>overview of your company.<br>Share your philosophy,<br>vision, or mantra here.</p>
         </div>
-        <div class="container2">
-            <div class="p3"><p>SERVICES WE PROVIDE</p></div>
-            <div class="p4"><p>Share your Services or product offerings here. Prsent them as simple header that can lead out to<br>there pages where you can expound them further.you can also use this place for the orther purposes<br>where the information is the best presented as mere teasers to another individualized pages. </p></div>
-            <div class="child">
+    </div>
+
+    <!-- SERVICES -->
+    <div class="container2">
+        <div class="p3"><p>SERVICES WE PROVIDE</p></div>
+        <div class="p4">
+            <p>Share your Services or product offerings here. Present them as simple headers that can lead out to
+            their pages where you can expound them further. You can also use this place for other purposes
+            where the information is best presented as mere teasers to another individualized page.</p>
+        </div>
+        <div class="child">
             <div class="box1">
                 <div class="p5">SECURE<br>&nbsp;&nbsp;DATA</div>
-                <div class="btn"><button>Learn More </button></div>
+                <div class="btn"><button>Learn More</button></div>
             </div>
             <div class="box2">
-                <div class="p6">&nbsp; &nbsp; &nbsp;24/7<br> SUPPORT</div>
+                <div class="p6">&nbsp;&nbsp;&nbsp;24/7<br>SUPPORT</div>
                 <div class="btn1"><button>Learn More</button></div>
             </div>
             <div class="box3">
                 <div class="p7">Customized Solutions</div>
                 <div class="btn2"><button>Learn More</button></div>
             </div>
-            </div>
         </div>
-        <div class="container3">
-            <div class="left-side">
-            <h1>100% SECURED<br> DATA</h1>
-            <p>Highlights Speicific Services or product that are unique<br>to you business here.it can be your flag ship product<br> or a service that you have pioneered. give it room to<br>shine here.</p>
-           <button>Learn More</button>
+    </div>
+
+    <!-- FEATURE -->
+    <div class="container3">
+        <div class="left-side">
+            <h1>100% SECURED<br>DATA</h1>
+            <p>Highlights specific services or products that are unique
+            to your business here. It can be your flagship product
+            or a service that you have pioneered. Give it room to
+            shine here.</p>
+            <button>Learn More</button>
         </div>
-        <div class="right-side">
-            
-        </div>
-        </div>
-       
+        <div class="right-side"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container4">
+        <p class="p10">HARPERs INC.</p>
+    </div>
+
 </body>
 </html>
